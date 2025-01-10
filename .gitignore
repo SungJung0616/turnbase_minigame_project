@@ -1,0 +1,13 @@
+﻿# Visual Studio 관련 파일 제외
+.vs/
+bin/
+obj/
+
+# Windows 시스템 파일 제외
+Thumbs.db
+desktop.ini
+
+# 사용자 설정 파일 제외
+*.user
+*.suo
+*.log
