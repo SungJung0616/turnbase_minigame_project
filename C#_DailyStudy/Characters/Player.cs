@@ -12,7 +12,9 @@ namespace C__DailyStudy.Characters
         {
             Name = name;
             HP = 100;
+            MP = 20;
             Attack = 20;
+            MagicAttack = 10;
             Defense = 10;
         }
     }

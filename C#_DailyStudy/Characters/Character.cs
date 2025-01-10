@@ -18,7 +18,7 @@ namespace C__DailyStudy.Characters
         public virtual void ShowStats()
         {
             Console.WriteLine($"Name: {Name}");
-            Console.WriteLine($"HP: {HP}, Attack: {Attack}, MagicAttack: {MagicAttack} ,Defense: {Defense}");
+            Console.WriteLine($"HP: {HP}, MP: {MP}, Attack: {Attack}, MagicAttack: {MagicAttack} ,Defense: {Defense}");
         }
 
         public virtual void AttackTarget(Character target)
