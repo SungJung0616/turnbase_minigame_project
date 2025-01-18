@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using C__DailyStudy.Characters; 
+using C__DailyStudy.GameLogic;
 
 
 class MainClass
@@ -63,7 +64,7 @@ class MainClass
         //    }
 
         int selectedIndex = 0;
-        string[] menuItems = { "Start Game", " Customize Character", "Load Game", "Exit" };
+        string[] menuItems = { "Start Game", "Customize Character", "Load Game", "Exit" };
 
         while (true)
         {
@@ -75,13 +76,15 @@ class MainClass
                 {
                     Console.BackgroundColor = ConsoleColor.Gray;
                     Console.ForegroundColor = ConsoleColor.Black;
+                    Console.WriteLine(menuItems[i]);
                 }
                 else
                 {
                     Console.BackgroundColor = ConsoleColor.Black;
                     Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine(menuItems[i]);
                 }
-                Console.WriteLine(menuItems[i]);
+                Console.ResetColor();
             }
 
             ConsoleKeyInfo keyInfo = Console.ReadKey();
@@ -108,6 +111,9 @@ class MainClass
                 if (selectedIndex == 0)
                 {
                     Console.WriteLine("Let's start the game!");
+                    Console.WriteLine("Press any key to continue...");//Start the game이 바로 지워지는걸 방지
+                    Console.ReadKey();
+                    GameLogic.StartGame();
                 }
                 else if (selectedIndex == 1)
                 {
@@ -122,6 +128,9 @@ class MainClass
                     Console.WriteLine("Exit");
                     break;
                 }
+
+                Console.WriteLine("Press any key to continue...");
+                Console.ReadKey();
             }
         }
     }
