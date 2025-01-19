@@ -6,6 +6,8 @@ class MainClass
 {
     public static void Main(string[] args)
     {
+        Console.OutputEncoding = System.Text.Encoding.UTF8;
+
         Console.WriteLine("Do you want to start you story? ");
         Console.WriteLine("1. Yes");
         Console.WriteLine("2. No");
