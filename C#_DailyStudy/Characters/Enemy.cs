@@ -18,7 +18,7 @@ namespace C__DailyStudy.Characters
         public void RandomStatGenerater()
         {
             Random random = new Random();
-            HP = random.Next(95, 100);
+            HP = random.Next(45, 50);
             MP = random.Next(15, 20);
             Attack = random.Next(15, 20);
             MagicAttack = random.Next(15, 20);

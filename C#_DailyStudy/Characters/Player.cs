@@ -18,7 +18,7 @@ namespace C__DailyStudy.Characters
         {
             Random random = new Random();
             HP = random.Next(95, 100);
-            MP = random.Next(15, 20);
+            MP = random.Next(25, 30);
             Attack = random.Next(15, 20);
             MagicAttack = random.Next(15, 20);
             Defense = random.Next(3, 6);
